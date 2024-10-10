@@ -10,7 +10,10 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+    origin:["https://full-stack-todo-app-beige.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true});
 app.use(bodyParser.json());
 
 // Connect to MongoDB
