@@ -1,0 +1,158 @@
+/* Main container for the todo list */
+.todo-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.todo-container h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input area */
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 78%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Task list */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed tasks */
+.task-list li span.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Task content */
+.task-list li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Buttons for actions */
+.task-list li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.task-list li button.edit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list li button.delete {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list li button.complete {
+    color: #28a745;
+}
+
+.task-list li button.save {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list li button.cancel {
+    padding: 10px 20px;
+    background-color: #484747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.task-list li input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Hover effects */
+.task-list li button:hover {
+    opacity: 0.7;
+}
+
+/* Checkbox */
+.task-list input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:968px) {
+    .todo-input input {
+        width: 75%;
+    }
+    .todo-container {
+        width: 100%;
+        max-width: 520px;
+    }
+}

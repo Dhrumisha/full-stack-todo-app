@@ -1,0 +1,21 @@
+:root{
+    --primary-color: #ecf4d8;
+    --secondary-color:#000;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 15px 0;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(211, 245, 225, 0.32);
+    margin: 0;
+  }
+
+  @media screen and (max-width:962px) {
+    .header{
+        font-size: 40px;
+    }
+  }
