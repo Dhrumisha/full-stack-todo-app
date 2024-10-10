@@ -14,7 +14,7 @@ export default function Registration() {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://full-stack-todo-app-beige.vercel.app/register', { username, password });
+            await axios.post('https://full-stack-todo-app-beige.vercel.app/api/register', { username, password });
             navigate('/login'); // Redirect to login page after successful registration
         } catch (err) {
             setError('Registration failed. Please try again.');
