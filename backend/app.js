@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors({
-    origin:["https://full-stack-todo-app-beige.vercel.app"],
+    origin:["https://full-stack-todo-app-frontend-ten.vercel.app"],
     methods:["POST","GET"],
     credentials:true});
 app.use(bodyParser.json());
